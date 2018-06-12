@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body>
+	<form>
+		Board Width
+		<input id="boardWidth" type="text" style="width:40px" min=1 max=99 placeholder="20">
+		Board Height
+		<input id="boardHeight" type="text" style="width:40px" min=1 max=99 placeholder="20">
+		Speed
+		<input id="speed" type="text" style="width:40px" min=0 max=99 placeholder="1">
+		<input type="button" value="Set" onClick="setSettings()">	
+	</form>
+  <canvas width="500" height="300" id="canvas"></canvas>
+</body>
+</html>
