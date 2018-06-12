@@ -276,7 +276,7 @@ function setSettings()
 	boardHeight = parseInt($("#boardHeight").val()!=="" ? $("#boardHeight").val() : 20);
 	cellWidth = Math.ceil(20/boardWidth * 20);
 	cellHeight = Math.ceil(20/boardHeight * 20);
-	speed = $("#speed").val()!=="" ? 1/parseInt($("#speed").val()) * 150 : 150;
+	speed = $("#speed").val()!=="" ? 1/parseFloat($("#speed").val()) * 150 : 150;
 	lose();
 	start();
 }
